@@ -3,7 +3,8 @@
 MASK-OFF generates and evaluates cases where a model completes a user's
 request while it omits a material fact it knows. This repository holds the
 full generation and evaluation pipeline, the frozen prompts, the seed
-corpus, and the design record for the paper's two item pools.
+corpus, the design record, and the released benchmark items with the
+summaries every paper number is derived from.
 
 **Start with [docs/DESIGN.md](docs/DESIGN.md)**, the narrative: how the
 pipeline works, the design decisions and their rationale, architecture
@@ -11,21 +12,29 @@ diagrams, and a reading guide. This README covers layout and how to run.
 
 The corpus is 500 items: **pool A** (400, produced by the Python pipeline
 in `mask_off/`) and **pool B** (100, produced by the agentic workflow
-process in `pool_b_workflows/`), seed-disjoint by construction. The
-datasets and evaluation outputs are released separately through Harvard
-Dataverse; this repository is the code, prompts, seeds, and design record.
+process in `pool_b_workflows/`), seed-disjoint by construction. Both pools
+ship here under `data/`, alongside the Stage-B evaluation summaries, the
+scrubbed labeling frame, the derived paper tables, and the scripts that
+rebuild those tables.
+
+Re-deriving the paper's numbers needs nothing but this repository: the
+scripts in `release/` read the summaries in `results/` and rebuild the
+three derived tables offline, with no API key. Re-buying the model
+responses those summaries were computed from needs API keys and money.
 
 ## Layout
 
 | Path | Contents |
 | --- | --- |
 | `docs/DESIGN.md` | The narrative companion: architecture, decisions, rationale, reading guide. |
+| `data/` | The released benchmark items: pool A (400) and pool B (100), one JSON object per line. |
 | `mask_off/` | The Python package: both pipeline stages, the three probes, the two ablation drivers, the tests, and the frozen prompts. Has its own README. |
 | `seeds/` | The authored seed corpus (`seedcorpus2`, 2,500 seeds) that pool A draws from, with the authoring log. |
 | `diversity/` | The diversity measurement workstream: frozen facet taxonomies, the labeling protocol and code, agreement statistics. |
 | `docs/` | The binding design record: the frozen design, its amendments, the ablation designs, the ADRs, and the self-verifying evidence logs. |
 | `pool_b_workflows/` | The pool B generation process: the two workflow scripts, every context document their agents read, and the target-model runner. Its README explains why pool B is different. |
-| `results/` | The computed analysis artifacts behind the ablation and diversity numbers the docs cite (eval-awareness, steerability, belief ablation, agreement statistics, diversity audits). The main census tables ship with the data release. |
+| `results/` | Every computed number the paper reports: the Stage-B eval summaries (`eval_summaries/`), the derived paper tables (`paper_tables/`), the scrubbed labeling frame and agreement statistics (`labeling/`), and the ablation and diversity outputs. Mapped file by file in its README. |
+| `release/` | Three scripts that rebuild the paper tables from the summaries in `results/`: `headline_table.py`, `gap_c3.py`, `roster_table.py`. They read local files only and need no API key. |
 | `CONTEXT.md` | The glossary. Every pipeline term is defined here and nowhere else. |
 | `ANALYSIS_PLAN.md` | The pre-specified analysis: corpus composition, metrics, confirmatory set, judge validation, freeze mechanics with exact hashes. |
 | `seed_subcategories.md` | The stratification axis: 14 domains, 40 taxonomy rows each. |
@@ -98,17 +107,26 @@ seat names, pinned in `mask_off/config.py` with per-route prices.
 
 ## What is not here
 
-- **Datasets and run outputs.** The item pools, evaluation rows, run
-  directories, and the per-seat census tables are released through
-  Harvard Dataverse. The code expects them under `output/`. The
-  analysis-level artifacts for the ablations and diversity audits are
-  the exception: they are small and ship in `results/`.
-- **Pool B raw material.** Pool B's items were imported by
+- **Raw response-level evaluation files.** Four pool-A shards of 42 to
+  49 MB and one 50 MB pool-B file: every sampled response, probe
+  response, and judgment. The summaries computed from them are in
+  `results/eval_summaries/`, and those are what the derivation scripts
+  read. The code expects the raw run directories under `output/`.
+- **Pool A's construction history.** The 300-item first pass and the
+  100-item top-up as separate files. `data/` carries the combined 400.
+- **The release bundles.** The packaged datasets, their Croissant
+  metadata, and their provenance files.
+- **The full labeling directory.** The scrubbed 150-item frame is in
+  `results/labeling/frame150/` and the agreement statistics beside it;
+  the raw, unscrubbed rater files are data. The protocol and code are in
+  `diversity/`.
+- **Pool B's raw material.** Pool B's items were imported by
   `mask_off/docimport.py` from transcript documents produced by the
-  workflows in `pool_b_workflows/`; the transcripts are part of the data
-  release.
-- **Rater label files.** The labeling protocol and code are in
-  `diversity/`; the collected labels are data.
+  workflows in `pool_b_workflows/`; the transcripts are data.
+
+All of it ships through a Harvard Dataverse deposit, which reviewers reach
+through an anonymized review URL. Cite the deposit as: "Anonymous authors.
+Under review at a NeurIPS 2026 workshop."
 
 ## Anonymisation note
 

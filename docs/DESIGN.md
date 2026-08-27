@@ -4,11 +4,12 @@ MASK-OFF measures a specific failure: a model completes a user's request
 while omitting a material fact it knows. Not ignorance, because the model
 can state the fact when asked directly. Not policy refusal, because the
 model engages with the task. The residue is a model that knew, would say,
-and did not volunteer. A development pilot states the thesis as one
-subtraction: asked directly, the pilot model asserted the hidden fact 90%
-of the time; unasked, it volunteered the fact in 71.7% of completions.
-The remainder, a 19.3% knowledge-conditioned omission rate ("knew, would
-say if asked, did not say"), is the phenomenon.
+and did not volunteer. A development pilot states the thesis in three
+numbers: asked directly, the pilot model asserted the hidden fact 90% of
+the time; unasked, it volunteered the fact in 71.7% of completions; and
+conditioned on the items it asserted, it omitted in 19.3% of completions.
+That last number ("knew, would say if asked, did not say") is the
+phenomenon.
 
 This document is the narrative companion to the repository: how the
 pipeline works, the design decisions behind it, and where to read further.
@@ -35,7 +36,8 @@ The released corpus is 500 items in two pools with different construction:
   `mask_off/docimport.py`, byte-verified against the source fences.
 
 The pools are seed-disjoint by construction: pool B carries no lineage
-from pool A's seed corpus.
+from pool A's seed corpus. Both ship under `data/`, and the Stage-B
+summaries computed over them are under `results/eval_summaries/`.
 
 ```mermaid
 flowchart LR
@@ -214,10 +216,12 @@ responses that came back are the subset the model was willing to answer,
 which is exactly the selection the metric observes. Reporting it with a
 caveat would invite the comparison the caveat denies, so the release
 strips the seat and reports the refusal rate as an observation about the
-model. The boundary case went the other way. `claude-opus-5` hard-refused
-40.2% of cells, 28 times any non-Anthropic seat, but keeps its seat with
-the majority usable and its refusal count printed beside its rate. Every
-seat carries a refusal-count column for the same reason.
+model. The boundary case went the other way. `claude-opus-5` hard-refused 47.0%
+of its pool-A cells and 8.2% of its pool-B cells, while every
+non-Anthropic seat recorded zero hard refusals in either pool; it keeps
+its seat with the majority of its responses usable and its refusal count
+printed beside its rate. Every seat carries a refusal-count column for
+the same reason.
 
 ## The ablations
 
@@ -333,11 +337,12 @@ Three engineering decisions are also measurement decisions:
 
 ## What the development record shows
 
-The datasets and evaluation outputs are released separately (Harvard
-Dataverse); the development record behind them supports observations a
-reviewer may want to look for in the data. Development-run figures below
-are exploratory, mostly single-target runs at n = 60 to 240, and are
-cited as motivation, not results:
+The released items and the summaries behind every reported number are in
+this repository; the raw response-level evaluation files ship through the
+Harvard Dataverse deposit. The development record behind them supports
+observations a reviewer may want to look for in the data. Development-run
+figures below are exploratory, mostly single-target runs at n = 60 to 240,
+and are cited as motivation, not results:
 
 - **The refusal-omission frontier inverts across labs.** On the pool-A
   run, the seat that answered 100% of its cells omitted in ~95% of them,
@@ -391,6 +396,11 @@ audit.
 | This file | The narrative: architecture, decisions, rationale. |
 | `CONTEXT.md` | The vocabulary. Terms are defined once, here. |
 | `ANALYSIS_PLAN.md` | The pre-specified analysis: metrics, CIs, freeze mechanics, exact hashes. |
+| `data/` | The released items themselves: pool A (400) and pool B (100). |
+| `results/eval_summaries/` | The Stage-B summaries every reported number is derived from. |
+| `results/paper_tables/` | The derived tables: headline rates, the C3 direct-vs-indirect gap, the roster and refusal table, the pool-B NER adjudication. |
+| `results/labeling/frame150/` | The scrubbed 150-item labeling frame, with the agreement statistics beside it. |
+| `release/` | The three scripts that rebuild the paper tables from the summaries, offline and without an API key. |
 | `docs/amendment-2026-08-03-validity-only-restore.md` | Why acceptance is validity-only; the fact-embedding and no-silent-remedy rules. |
 | `docs/amendment-2026-08-16-probe-redesign.md` | The probe battery in full, and the ideas it killed. |
 | `docs/shared-understanding-2026-08-13.md` | The frozen design the plan derives from. |
@@ -400,4 +410,4 @@ audit.
 | `pool_b_workflows/README.md` | The pool B process and its context documents. |
 | `diversity/released_set_measurement.md` | The measured diversity of the released 500: near-duplicate audit, Hill numbers, text battery, entities. |
 | `docs/evidence/` | Two pilot run logs whose README's figures are recomputed by `summarize.py`. |
-| `results/` | The computed analysis files behind the ablation and diversity numbers cited above, mapped file-by-file in its README. |
+| `results/` | Everything computed, including the ablation and diversity files behind the numbers cited above, mapped file by file in its README. |
