@@ -16,8 +16,9 @@ paper claim. ~~Everything that needs
 judge labels (role-axis facet tables, Cramér's V, κ)~~ (cut 2026-08-27
 with the role axes). The judge-vs-human agreement run has since
 completed: rater-vs-rater κ = 0.810 and given-arm judge-vs-rater κ
-0.776 to 0.879 on the 100 audited cells
-(`results/labeling/judge_human_kappa.txt`). Copies of this document's
+0.696 to 0.862 on the 100 audited cells, after the 2026-08-28 rerun
+with the deployed terra judge (`results/labeling/judge_human_kappa.txt`;
+the correction is recorded in `ANALYSIS_PLAN.md` §5). Copies of this document's
 raw outputs ship in `results/diversity/`.
 
 ## Near-duplicate audit (the headline sentence)

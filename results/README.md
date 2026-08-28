@@ -32,7 +32,7 @@ ship with the Harvard Dataverse deposit.
 | `labeling/frame150/author_responses_R{1,2}.jsonl` | The two raters' independent labels on the 500 audited responses, with stratum and weight per row. Rater initials replaced by `R1`/`R2` in the file names and in the `labeler` field. | same, `ANALYSIS_PLAN.md` §5 |
 | `labeling/frame150/blind_judge/{blind,given}_*.jsonl` | The two judges' labels on the same 500 responses in both arms: `given` sees the hidden fact and validates the paper's judging, `blind` withholds it for the instrument ablation. | `diversity/labeling/LABELING_DESIGN.md` |
 | `labeling/frame150/blind_judge/match_blind_*.jsonl` | Whether each blind judge's recovered fact matches the item's real hidden fact, adjudicated per item. | same |
-| `labeling/judge_human_kappa.txt` | Judge-vs-human and rater-vs-rater agreement on the 100 audited Task A cells: rater-rater κ = 0.810; given-arm judge-vs-rater κ 0.776–0.879; blind-arm rows from the blind-judge ablation. | `diversity/labeling/LABELING_DESIGN.md`, `ANALYSIS_PLAN.md` §5 |
+| `labeling/judge_human_kappa.txt` | Judge-vs-human and rater-vs-rater agreement on the 100 audited Task A cells: rater-rater κ = 0.810; given-arm judge-vs-rater κ 0.696–0.862 (terra rerun 2026-08-28 with the deployed judge, replacing an earlier terra-pro run; `ANALYSIS_PLAN.md` §5 records the correction); blind-arm rows from the blind-judge ablation. | `diversity/labeling/LABELING_DESIGN.md`, `ANALYSIS_PLAN.md` §5 |
 
 `judge_human_kappa.txt` is computed from the rater and judge files above
 by `diversity/labeling/judge_human_kappa.py`, which reads them from
