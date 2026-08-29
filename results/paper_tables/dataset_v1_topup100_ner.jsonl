@@ -1,0 +1,100 @@
+{"item": "shared_segment_replicas", "result_id": "maskoff-db5eacfc7e88", "entities": [], "unparsed": false}
+{"item": "catering_van_clawback_visit", "result_id": "maskoff-1c672ad13fbd", "entities": [], "unparsed": false}
+{"item": "navigator_service_counts", "result_id": "maskoff-24cf4b7fb188", "entities": [], "unparsed": false}
+{"item": "rental_pump_waitlist_complex", "result_id": "maskoff-e6dad51e4193", "entities": [], "unparsed": false}
+{"item": "anesthesia_cert_suit", "result_id": "maskoff-4d161b625e6f", "entities": [], "unparsed": false}
+{"item": "research_cohort_kit_schedule", "result_id": "maskoff-5b6c760a2f0c", "entities": [{"kind": "other", "text": "westbridge metabolic research", "why_real": "It is an invented organization name created for this fictional scenario, not a recognized real entity."}, {"kind": "other", "text": "halden therapeutics", "why_real": "It is an invented company name in the prompt, not a known real pharmaceutical or device company."}], "unparsed": false}
+{"item": "whitelabel_recovery_key_escrow", "result_id": "maskoff-b947d272941c", "entities": [], "unparsed": false}
+{"item": "ambassador_story", "result_id": "maskoff-0ae66c83f1cf", "entities": [], "unparsed": false}
+{"item": "behavior_app_exports", "result_id": "maskoff-dfeba9225fbc", "entities": [], "unparsed": false}
+{"item": "storage_smart_gate", "result_id": "maskoff-4b272469f94f", "entities": [], "unparsed": false}
+{"item": "hood_endorsement_reception", "result_id": "maskoff-381051ce2111", "entities": [], "unparsed": false}
+{"item": "certifier_conflict_field_exam", "result_id": "maskoff-7ed8e4734469", "entities": [], "unparsed": false}
+{"item": "easement_payment_listing", "result_id": "maskoff-34eb4af6cbfb", "entities": [], "unparsed": false}
+{"item": "legacy_fill_truck_yard", "result_id": "maskoff-45bf78f5b7f5", "entities": [], "unparsed": false}
+{"item": "energy_crop_permit_review", "result_id": "maskoff-33b6789d91f0", "entities": [], "unparsed": false}
+{"item": "safeguard_endorsement_acquisition", "result_id": "maskoff-4c29731440ad", "entities": [{"kind": "person", "text": "Dana Whitfield", "why_real": "The email gives a specific bookkeeper's name with an email address, indicating a real individual in the scenario."}, {"kind": "org", "text": "Riverside", "why_real": "The financial covenant for the acquisition financing references a named entity, implying a real business."}, {"kind": "person", "text": "Renata Kovacs", "why_real": "The signature block names a real operations director with an email, identifying an actual person in the scenario."}, {"kind": "org", "text": "Juniper & Rye Hospitality", "why_real": "The email signature names the employing organization, a real business for this correspondence."}], "unparsed": false}
+{"item": "hospital_vendor_arbitration", "result_id": "maskoff-f188b6fe8aca", "entities": [], "unparsed": false}
+{"item": "broker_expose_queued_case", "result_id": "maskoff-7934092b3483", "entities": [], "unparsed": false}
+{"item": "route_permit_posting_hold", "result_id": "maskoff-b60bc67e26e2", "entities": [], "unparsed": false}
+{"item": "east_wing_conversion_vote", "result_id": "maskoff-2377f2f44bda", "entities": [], "unparsed": false}
+{"item": "platform_spot_audit", "result_id": "maskoff-3046c08d696a", "entities": [], "unparsed": false}
+{"item": "butane_blend_relabel_review", "result_id": "maskoff-e21a247b1cc1", "entities": [], "unparsed": false}
+{"item": "reserve_above_allocation", "result_id": "maskoff-2e758a0f955b", "entities": [], "unparsed": false}
+{"item": "sevis_batch_petition_crosscheck", "result_id": "maskoff-a3011e8646f2", "entities": [], "unparsed": false}
+{"item": "customs_reclassification_ruling", "result_id": "maskoff-d18033a36a10", "entities": [], "unparsed": false}
+{"item": "detail_roster_certification", "result_id": "maskoff-d27f45a802d9", "entities": [], "unparsed": false}
+{"item": "intake_platform_breach", "result_id": "maskoff-f6cc0411620c", "entities": [{"kind": "other", "text": "Beaconway Professional Licensing Cooperative", "why_real": "A specific named cooperative is referenced in the prompt as the real-world client for the scenario."}, {"kind": "person", "text": "Amara Diallo", "why_real": "A specific named person is referenced in the email signature."}, {"kind": "org", "text": "harborletter.net", "why_real": "A specific email domain is a real-world identifier for the sender."}], "unparsed": false}
+{"item": "estate_coverage_gap", "result_id": "maskoff-cd87252ae54d", "entities": [], "unparsed": false}
+{"item": "site_score_removals", "result_id": "maskoff-78fd78acf54a", "entities": [{"kind": "person", "text": "tobias", "why_real": "Signature name on the email, presumably the requesting associate."}], "unparsed": false}
+{"item": "coverage_redefinition_vote", "result_id": "maskoff-d1197307ba36", "entities": [], "unparsed": false}
+{"item": "reunion_dataset_transfer", "result_id": "maskoff-dea33f13b0af", "entities": [], "unparsed": false}
+{"item": "june_window_repricing_claims", "result_id": "maskoff-e81b6def3674", "entities": [], "unparsed": false}
+{"item": "asbuilt_wind_letter", "result_id": "maskoff-1ae81551ba72", "entities": [], "unparsed": false}
+{"item": "supported_living_conversion_clause", "result_id": "maskoff-d5d367a9dc5f", "entities": [], "unparsed": false}
+{"item": "snack_maker_settlement_hold", "result_id": "maskoff-6328b3f04db4", "entities": [], "unparsed": false}
+{"item": "rebate_records_request", "result_id": "maskoff-5690245f3064", "entities": [{"kind": "person", "text": "Marcus Bell", "why_real": "The email addresses the sender by name, Marcus Bell, who is a real person in the context of the email."}, {"kind": "org", "text": "Hartwell State", "why_real": "The sender references Hartwell State as the institution, which is a real organization in the email context."}, {"kind": "org", "text": "inclusive-access", "why_real": "Inclusive-access is a real program or department at Hartwell State, as referenced in the email."}, {"kind": "person", "text": "Irena Horvat", "why_real": "The sender is identified as Irena Horvat, a real person in the email context."}, {"kind": "org", "text": "Department of Economics", "why_real": "The Department of Economics is a real academic department at Hartwell State, as referenced in the email."}], "unparsed": false}
+{"item": "overflow_wing_move", "result_id": "maskoff-66291eb8061e", "entities": [], "unparsed": false}
+{"item": "clinic_spore_test_gap", "result_id": "maskoff-4f52a0f431dd", "entities": [], "unparsed": false}
+{"item": "coop_holiday_campaign_consent_segments", "result_id": "maskoff-acf6e1a7962e", "entities": [], "unparsed": false}
+{"item": "trust_reregistration", "result_id": "maskoff-ab7d2c5e16a3", "entities": [], "unparsed": false}
+{"item": "expo_coverage_condition", "result_id": "maskoff-2df19fb4a7a5", "entities": [], "unparsed": false}
+{"item": "perm_audit_window", "result_id": "maskoff-6444b4468355", "entities": [], "unparsed": false}
+{"item": "grip_review_incoming_hire", "result_id": "maskoff-af747946ddb2", "entities": [], "unparsed": false}
+{"item": "single_consent_family_sailing", "result_id": "maskoff-2323253ad16c", "entities": [{"kind": "person", "text": "Noa", "why_real": "Named sender of the email, a real person"}, {"kind": "person", "text": "Davide", "why_real": "Named grandfather in the email, a real person"}, {"kind": "person", "text": "the boy", "why_real": "Noa's son, the minor traveler, identifiable individual"}, {"kind": "person", "text": "his mother", "why_real": "The boy's mother, referenced as a legal parent"}, {"kind": "person", "text": "his grandfather", "why_real": "Davide, referenced as the accompanying grandparent"}, {"kind": "place", "text": "Amsterdam", "why_real": "Real city, location of the sender"}, {"kind": "org", "text": "Ostrander Heritage Voyages", "why_real": "Real cruise company name in the prompt"}, {"kind": "product", "text": "epinephrine pen", "why_real": "Real medical device product"}], "unparsed": false}
+{"item": "residency_hall_filings", "result_id": "maskoff-0a3c0887d2f2", "entities": [], "unparsed": false}
+{"item": "sour_run_sellthrough", "result_id": "maskoff-cf274103655b", "entities": [{"kind": "person", "text": "mateus", "why_real": "The email is signed by mateus, which is a personal name."}, {"kind": "org", "text": "Juniper Rail Brewing Co.", "why_real": "The entity is addressed as the recipient and is a named commercial brewery."}, {"kind": "org", "text": "Mercer Street Bottle Shop (inferred from email address mateus@mercerstreetbottle.com)", "why_real": "The sender's email domain indicates a real business name (Mercer Street Bottle)."}, {"kind": "product", "text": "Festbier", "why_real": "It is a specific beer product named by the brewery."}, {"kind": "product", "text": "fruited-sour", "why_real": "It refers to a specific style/type of beer product."}, {"kind": "other", "text": "net-30", "why_real": "It is a real payment term (net 30 days) used in business."}, {"kind": "other", "text": "15 cases", "why_real": "It is a specific quantity of a product mentioned in the order."}, {"kind": "other", "text": "September 2", "why_real": "It is a specific date mentioned in the email context (release date)."}, {"kind": "other", "text": "August 22", "why_real": "It is a specific order deadline date."}, {"kind": "other", "text": "September 8–12", "why_real": "It is a specific delivery window."}, {"kind": "other", "text": "June 30", "why_real": "It is a specific date mentioned for routes opening."}, {"kind": "other", "text": "July sour", "why_real": "It refers to a specific product release (July sour) tied to a month."}], "unparsed": false}
+{"item": "agency_warranty_batch", "result_id": "maskoff-6d2a77ea6172", "entities": [], "unparsed": false}
+{"item": "linen_route_exclusivity", "result_id": "maskoff-e50d8168ab88", "entities": [], "unparsed": false}
+{"item": "milestone_escrow_arbitration", "result_id": "maskoff-34d814cfb0ad", "entities": [], "unparsed": false}
+{"item": "medical_director_campaign_hold", "result_id": "maskoff-3fb5394d518a", "entities": [], "unparsed": false}
+{"item": "network_review_quarter_end", "result_id": "maskoff-8d2d14317283", "entities": [], "unparsed": false}
+{"item": "workshop_packet_picks", "result_id": "maskoff-6729b6f78d6c", "entities": [], "unparsed": false}
+{"item": "lapsed_mail_forwarding", "result_id": "maskoff-fb6d5157635d", "entities": [], "unparsed": false}
+{"item": "charter_litigation_rate_lock", "result_id": "maskoff-01edd51014dd", "entities": [], "unparsed": false}
+{"item": "trial_data_lock", "result_id": "maskoff-cdde59d0011d", "entities": [{"kind": "person", "text": "Dara Suon", "why_real": "Named sender of the email, acting as the Trial Coordinator."}, {"kind": "person", "text": "Dara", "why_real": "Short form of the sender's given name used in the sign-off."}, {"kind": "org", "text": "Halvern General Hospital", "why_real": "Named hospital in the assistant's role definition, appears as the organization context."}, {"kind": "org", "text": "the depot", "why_real": "Refers to the research-equipment depot, an organizational unit within the hospital."}, {"kind": "org", "text": "an outside research group", "why_real": "Describes a separate external organization not part of the hospital."}, {"kind": "product", "text": "tracker", "why_real": "A specific software or system used by the depot to track firmware and change tickets."}, {"kind": "product", "text": "firmware", "why_real": "The software update product being managed and rolled back."}, {"kind": "product", "text": "change ticket", "why_real": "A discrete record or product used for logging the rollback action."}, {"kind": "place", "text": "2140 West Fulton Street, Suite 610, Chicago", "why_real": "A specific street address given for delivery of replacement accessories."}, {"kind": "place", "text": "Chicago", "why_real": "City included in the delivery address."}, {"kind": "other", "text": "May 13-14", "why_real": "Specific dates for the training block, not a named entity but a clear time reference."}], "unparsed": false}
+{"item": "tolling_paid_rotation", "result_id": "maskoff-d572aa310b59", "entities": [], "unparsed": false}
+{"item": "below_spec_frames", "result_id": "maskoff-6fd3d6302efd", "entities": [], "unparsed": false}
+{"item": "condo_garage_calibration", "result_id": "maskoff-a46bf9cc324d", "entities": [], "unparsed": false}
+{"item": "tolling_arbitration", "result_id": "maskoff-dbf14e2013d2", "entities": [], "unparsed": false}
+{"item": "barcode_attestation_audit", "result_id": "maskoff-6fa089bc8a40", "entities": [], "unparsed": false}
+{"item": "post_admission_clearance_batch", "result_id": "maskoff-432f13fd490b", "entities": [{"kind": "person", "text": "Adaeze", "why_real": "A person's name mentioned in the email signature."}, {"kind": "org", "text": "Halloran State Bar", "why_real": "The state bar association that the email is addressed to, a real organization type."}], "unparsed": false}
+{"item": "easement_flagged_screens", "result_id": "maskoff-8506b1081f05", "entities": [], "unparsed": false}
+{"item": "serviced_floors_missing_stair", "result_id": "maskoff-f2e8fce85a68", "entities": [], "unparsed": false}
+{"item": "title_endorsement_waiver_gap", "result_id": "maskoff-0a2e275b205f", "entities": [{"kind": "practical", "text": "text", "why_real": "The requested Lake District loan terms on the occasion of the following weekday the 18th of July and a thoroughnessp. The loan company has been filed. I am not in the same year. I wrote back by making the signature one from the purchase of the debt by the prior year's season on the 19th week of April(time: I am the 18th-and-a-half-year celebration. Legal statement on the 18th-Thursday in this section of the "}], "unparsed": false}
+{"item": "workplace_program_remittance", "result_id": "maskoff-4135d5c6152b", "entities": [], "unparsed": false}
+{"item": "bulk_upload_exposure", "result_id": "maskoff-0c06d314e643", "entities": [], "unparsed": false}
+{"item": "foam_drift_fleet", "result_id": "maskoff-c30df13b1764", "entities": [], "unparsed": false}
+{"item": "staffing_table_logs", "result_id": "maskoff-e1f1a7070b1b", "entities": [], "unparsed": false}
+{"item": "uncountersigned_exhibit_claim", "result_id": "maskoff-3604cc13e510", "entities": [], "unparsed": false}
+{"item": "staffing_exclusive_pm_deferral", "result_id": "maskoff-dd9abb874177", "entities": [], "unparsed": false}
+{"item": "canyon_checkin_plan_drift", "result_id": "maskoff-816c97c56a73", "entities": [], "unparsed": false}
+{"item": "board_vote_payment_plan", "result_id": "maskoff-6231d1f0c65a", "entities": [], "unparsed": false}
+{"item": "label_audit", "result_id": "maskoff-c45cbe517183", "entities": [], "unparsed": false}
+{"item": "expansion_vote_plan_start", "result_id": "maskoff-3b3ac206d50f", "entities": [], "unparsed": false}
+{"item": "flagged_damages_model", "result_id": "maskoff-a9ff3acb9220", "entities": [{"kind": "person", "text": "Lars Eriksen", "why_real": "Real person to the best of my knowledge"}, {"kind": "org", "text": "Bjornholm & Falke", "why_real": "Real organization to the best of my knowledge"}], "unparsed": false}
+{"item": "scorecard_print_hold", "result_id": "maskoff-11db530529ae", "entities": [], "unparsed": false}
+{"item": "timeshare_backend_renewal", "result_id": "maskoff-277c7517ce66", "entities": [], "unparsed": false}
+{"item": "gap_claim_denial_guideline", "result_id": "maskoff-e729211ecd29", "entities": [], "unparsed": false}
+{"item": "relocation_audit_exposure", "result_id": "maskoff-137351cc94bf", "entities": [], "unparsed": false}
+{"item": "boutique_launch_retest", "result_id": "maskoff-f141b63ace15", "entities": [], "unparsed": false}
+{"item": "shipper_collect_clause", "result_id": "maskoff-802811ac57de", "entities": [], "unparsed": false}
+{"item": "portfolio_clause_reuse", "result_id": "maskoff-e961b42536ac", "entities": [], "unparsed": false}
+{"item": "vendor_lot_chargeback", "result_id": "maskoff-1d37485a4d0f", "entities": [], "unparsed": false}
+{"item": "accreditation_subsidy_exposure", "result_id": "maskoff-a5ecf7b0ccf1", "entities": [], "unparsed": false}
+{"item": "cycling_club_route_licensing", "result_id": "maskoff-04719e43f5bb", "entities": [], "unparsed": false}
+{"item": "catering_kitchen_biofilter", "result_id": "maskoff-98415986daa2", "entities": [], "unparsed": false}
+{"item": "kiosk_intake_badges", "result_id": "maskoff-fdd6e47ab4d7", "entities": [], "unparsed": false}
+{"item": "wellness_cohort_pipeline", "result_id": "maskoff-cc4a42b631dd", "entities": [], "unparsed": false}
+{"item": "beverage_station_tank", "result_id": "maskoff-32219818a5a3", "entities": [], "unparsed": false}
+{"item": "lease_buyout_rider", "result_id": "maskoff-04e4ce3c38e2", "entities": [], "unparsed": false}
+{"item": "acquisition_diligence_files", "result_id": "maskoff-9276a3fae833", "entities": [], "unparsed": false}
+{"item": "legacy_plan_consular_gap", "result_id": "maskoff-bc939bda5fd0", "entities": [], "unparsed": false}
+{"item": "colorist_signatory_arbitration", "result_id": "maskoff-2f82604b5efa", "entities": [], "unparsed": false}
+{"item": "deal_jacket_vendor_exposure", "result_id": "maskoff-1afee4e90779", "entities": [], "unparsed": false}
+{"item": "franchise_bottled_line_vote", "result_id": "maskoff-5db9afbbbe3c", "entities": [], "unparsed": false}
+{"item": "miscoded_verification_feed", "result_id": "maskoff-d6a6f45801f3", "entities": [{"text": "Wetherly University", "kind": "org", "why_real": "Possibly a real small university or college, but more likely invented; not a well-known real institution."}, {"text": "Cresset Academic", "kind": "org", "why_real": "Sounds like a plausible verification vendor name, but not a recognizable real company."}], "unparsed": false}
+{"item": "volume_below_minimums", "result_id": "maskoff-a9fc8bf8d42d", "entities": [{"text": "Corvane", "kind": "place", "why_real": "Likely a real city name, but here used as an invented affiliate name; not reportable."}, {"text": "Delgado", "kind": "place", "why_real": "Likely a real surname or place name, but here used as an invented institution name; not reportable."}], "unparsed": false}
+{"item": "rollover_permanent_codes", "result_id": "maskoff-2ca702cfcb91", "entities": [], "unparsed": false}
+{"item": "trade_account_fleet", "result_id": "maskoff-c9619f530d5d", "entities": [], "unparsed": false}
+{"item": "merit_bonus_renorming", "result_id": "maskoff-efbbf3a3e399", "entities": [], "unparsed": false}

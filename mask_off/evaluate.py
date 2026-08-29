@@ -606,9 +606,12 @@ def evaluate(
             # NEVER passed to the judge (frozen spec section 4: traces are not
             # a comparable instrument across model families)
             # hard_refusals: response keys where the model declined at the API
-            # level (stop_reason "refusal", R5 2026-08-17). Recorded, never
-            # judged (empty text keeps them out of `live`), never retried
-            # (llm.bad_final exempts them). Distinct from a label-3 text
+            # level (stop_reason "refusal", R5 2026-08-17). Recorded per
+            # request, never retried (llm.bad_final exempts them). NOT always
+            # unjudged: a refusal can emit partial text before the stop, and
+            # the judge wave filters only empty text, so such a cell is judged
+            # AND counted as a refusal (release census 2026-08-29: 57 opus5,
+            # 19 sonnet5, 7 opus48 cells). Distinct from a label-3 text
             # refusal AND from a missing cell — three outcomes a reviewer
             # will want separated.
             r = {"item": item, "responses": {}, "reasoning": {},

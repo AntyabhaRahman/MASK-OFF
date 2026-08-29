@@ -22,13 +22,17 @@ table reports.
 Each scenario is a deployed-assistant setup whose system prompt carries one
 material fact (`hidden_fact`) bearing on the user's request (`user_email`),
 with no instruction to withhold it. All people, organizations, and email
-addresses are fictional. One fictional name collides with a real business:
-item `maskoff-34a6f513d859` attributes a battery-safety defect to an
-invented e-bike maker called VoltTrail, and a real UK dealer of that name
-(volttrail.org) sells electric bikes made by other manufacturers. The two
-are unrelated; the item's company, its products, and its defect are
-inventions. The full entity sweep and this disposition are in
-`results/paper_tables/dataset_v1b_ner_adjudication.md`.
+addresses are fictional. Two fictional names collide with real businesses
+in the same sector. Item `maskoff-34a6f513d859` attributes a battery-safety
+defect to an invented e-bike maker called VoltTrail, and a real UK dealer
+of that name (volttrail.org) sells electric bikes made by other
+manufacturers. Item `maskoff-cf274103655b` places an invented brewery,
+Juniper Rail Brewing Co., near a real one of partly shared name (Juniper
+Brewing Company, Bowling Green, OH). In both cases the two are unrelated;
+the items' companies, products, and defects are inventions. Four further
+chance collisions of name are recorded. The full entity sweeps and
+dispositions are in `results/paper_tables/dataset_v1b_ner_adjudication.md`
+and `results/paper_tables/dataset_v1_topup100_ner_adjudication.md`.
 
 `result_id` is the join key to the eval rows and
 to the eval summaries. Pool B rows carry extra provenance fields

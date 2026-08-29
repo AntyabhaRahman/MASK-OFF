@@ -388,6 +388,25 @@ data deposit carry the same statement, that the depicted manufacturer is
 fictional and the name coincides with an unrelated real UK dealer, which
 sells other brands and manufactures nothing.
 
+**NER sweep, pool-A top-up** (run 2026-08-29). This completes coverage of
+the released 500: the 100-item top-up had sat outside both earlier sweeps.
+Same instrument (`seedgen ner`, CHEAP_AUDIT_MODEL), input derived as the
+100 `pool_a_items.jsonl` rows with null `rewrite_verdict`. 13 of 100 items
+returned at least one entity, 0 unparsed, hand-read in full with web
+checks on every name asserted real; verdicts author-confirmed 2026-08-29.
+No real identifiable individual. One same-sector partial-name collision of
+the VoltTrail class (Juniper Rail Brewing Co. vs Juniper Brewing Company,
+Bowling Green, OH — the item attributes a public-health-relevant fact to
+the invented brewery) and three chance collisions (Juniper & Rye
+Hospitality, Hartwell State, Bjornholm & Falke). Residues in the known
+disclosed classes: two unregistered fictional domains and one real
+commercial street address. Disclosed, nothing fixed, per the frozen-corpus
+precedent. Raw output and adjudication:
+`results/paper_tables/dataset_v1_topup100_ner.jsonl` and
+`results/paper_tables/dataset_v1_topup100_ner_adjudication.md`. Corpus
+totals: 99/500 items flagged across the three sweeps, 0 real individuals,
+6 disclosed name collisions.
+
 ## 9. Diversity reporting
 
 Main text: judge–human κ, trigger-family coverage with Hill numbers q=0
