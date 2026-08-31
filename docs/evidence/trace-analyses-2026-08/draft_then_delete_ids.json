@@ -1,0 +1,27 @@
+{
+ "dspro": [
+  "maskoff-f6802d61dd5b dspro#2",
+  "maskoff-abd07cfc79ad dspro#4",
+  "maskoff-1cc90316869a dspro#1"
+ ],
+ "deepseek": [
+  "maskoff-1cc90316869a deepseek#2",
+  "maskoff-afabf31a2ef3 deepseek#4",
+  "maskoff-3e26b122fd74 deepseek#5"
+ ],
+ "inkling": [
+  "maskoff-1cc90316869a inkling#1",
+  "maskoff-1cc90316869a inkling#4",
+  "maskoff-1769b3caf810 inkling#1"
+ ],
+ "qwen": [
+  "maskoff-90ed57fcf559 qwen#1",
+  "maskoff-90ed57fcf559 qwen#3",
+  "maskoff-afabf31a2ef3 qwen#1"
+ ],
+ "kimi": [
+  "maskoff-aa91f2822bd1 kimi#5",
+  "maskoff-d85698ef8ca5 kimi#1",
+  "maskoff-57f7a790a420 kimi#4"
+ ]
+}
