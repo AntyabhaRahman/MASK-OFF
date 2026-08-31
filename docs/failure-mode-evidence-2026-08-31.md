@@ -1,7 +1,7 @@
-# Supplementary evidence: reasoning-trace analyses for the Failure Mode Analysis section
+# Supplementary evidence: reasoning-trace analyses for the "Omission Up Close" section
 
 This document records the data, methods, and full results behind the trace-level claims in the
-manuscript's Failure Mode Analysis section. All analyses read the released evaluation shards
+manuscript's "Omission Up Close" section. All analyses read the released evaluation shards
 (`release/pool_a/pool_a_400_eval.shard0{1-4}.jsonl`, `release/pool_b/pool_b_100_eval.jsonl`).
 
 Definitions used throughout:
