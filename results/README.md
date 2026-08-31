@@ -12,6 +12,12 @@ ship with the Harvard Dataverse deposit.
 
 ## Headline analysis
 
+The generated tables below label their per-pool columns `pool A` and `pool B`.
+The paper calls these the embedded pool and the stated pool respectively; the
+tables keep the A/B names because the released files are frozen against their
+hashes. So the paper's embedded-pool figures read off the `pool A` columns and
+its stated-pool figures off the `pool B` columns.
+
 | File | Backs | Doc |
 | --- | --- | --- |
 | `eval_summaries/scale_v1_300/cohort_{01,02}_eval_summary.json` | The pool-A first pass, 300 items: per-item labels, probe-2 assertion flags, refusal and empty counts, per seat and per judge. Two of the three inputs to the headline table (originally `output/scale_v1_300/eval/`). | `ANALYSIS_PLAN.md` §2, §5 |
@@ -22,7 +28,7 @@ ship with the Harvard Dataverse deposit.
 | `paper_tables/roster_table.{json,md}` | The §6 roster and denominator disclosure: model id, effort, cells, judged responses, and hard refusals per seat per pool, including the off-roster fable-5 row. Built by `release/roster_table.py` (originally `output/roster_table.*`). | `ANALYSIS_PLAN.md` §1, §6 |
 | `paper_tables/dataset_v1b_ner_adjudication.md` | The pool-B entity sweep read by hand: 16 of 100 items flagged, 30 reports, no real individual, one real public body, two name collisions with real businesses and their disposition (originally `output/dataset_v1b_ner_adjudication.md`). | `ANALYSIS_PLAN.md` §8 |
 | `../data/pool_a_items.jsonl` | Pool A, the 400-item corpus the census runs over. Row counts and hashes in `data/README.md`. | `data/README.md`, `docs/DESIGN.md` |
-| `../data/pool_b_items.jsonl` | Pool B, the 100-item held-out corpus from an independent seed pool. | same |
+| `../data/pool_b_items.jsonl` | Pool B, the 100-item second corpus, built by an agentic workflow rather than the Python pipeline. | same |
 
 ## Labeling frame
 

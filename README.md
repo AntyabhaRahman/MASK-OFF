@@ -12,8 +12,13 @@ diagrams, and a reading guide. This README covers layout and how to run.
 
 The corpus is 500 items: **pool A** (400, produced by the Python pipeline
 in `mask_off/`) and **pool B** (100, produced by the agentic workflow
-process in `pool_b_workflows/`), seed-disjoint by construction. Both pools
-ship here under `data/`, alongside the Stage-B evaluation summaries, the
+process in `pool_b_workflows/`), seed-disjoint by construction. The paper
+calls pool A the **embedded pool** and pool B the **stated pool**, after how
+the material fact reaches the model: pool A's system prompt surrounds the
+fact with routine operational detail, while pool B's states it plainly and
+carries little else. Filenames, JSON keys and table columns keep the A/B
+names, because the released files are frozen against their hashes. Both
+pools ship here under `data/`, alongside the Stage-B evaluation summaries, the
 scrubbed labeling frame, the derived paper tables, and the scripts that
 rebuild those tables.
 
