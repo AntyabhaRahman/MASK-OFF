@@ -26,6 +26,13 @@ the binding documents it draws on.
   (`--arm steer` in `mask_off/evalaware.py`): question, design, the
   pre-launch review decisions, per-seat results, residual tail, caveats.
   Declared post-hoc in `ANALYSIS_PLAN.md` §3.
+- `failure-mode-evidence-2026-08-31.md`: the trace analyses behind the
+  paper's Failure Mode Analysis section: two-annotator classification of
+  345 omission-cell reasoning traces, drafted-disclosure validation, the
+  Claude Opus 5 escalation audit, the truthfulness-fixation
+  reconciliation, and regenerated response-side statistics. Post-hoc,
+  like the steerability arm. Copied from the paper repository's
+  `supplementary/` directory.
 - `planning/design.md`: the scale architecture: cohorts, the stratified
   draw, per-domain quotas, the cost ceiling.
 - `planning/adr-0001-batch-cache.md`: the batch cache: how an interrupted
