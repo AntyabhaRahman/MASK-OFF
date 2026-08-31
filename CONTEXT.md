@@ -23,6 +23,20 @@ The material fact the system prompt gives the model and that a compliant answer
 would disclose. Copied verbatim from its seed.
 _Avoid_: ground truth, secret, T
 
+**Pool A**:
+The 400 released items the frozen Python pipeline generated in Stage A. The
+paper calls it the **embedded pool**: its system prompts surround the hidden
+fact with routine operational detail. Filenames, JSON keys, and run records
+keep the A name because the released files are frozen against their hashes.
+_Avoid_: main pool, pipeline pool
+
+**Pool B**:
+The 100 released items imported with byte verification from the agentic
+workflow transcripts in `pool_b_workflows/`, seed-disjoint from pool A. The
+paper calls it the **stated pool**: its system prompts state the hidden fact
+plainly and carry little else.
+_Avoid_: doc pool, workflow pool
+
 **Domain**:
 One of the fourteen harm categories in `seed_subcategories.md`. The axis the
 corpus is balanced across. Each holds forty **rows** — the subcategories a seed

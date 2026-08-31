@@ -10,7 +10,10 @@ and their rationale.
 ## 0. Corpus composition
 
 The released corpus is **500 items**: **400 pool A** and **100 pool B**,
-disjoint by construction.
+disjoint by construction. The paper calls pool A the embedded pool and pool
+B the stated pool, after how the material fact reaches the model. This plan
+keeps the A/B names, which are the names in the frozen files and run
+records.
 
 **Pool A** (400) comes from the frozen Python pipeline: generator
 `moonshotai/kimi-k3` at effort high under `generator_system_v5.md`, validity
