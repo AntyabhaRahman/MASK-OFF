@@ -213,6 +213,11 @@ regenerated them with documented methods over both-judge cells:
 - **First-mention position in disclosing replies**: median 0.16 to 0.46 by seat, measured as the
   first occurrence of distinctive vocabulary by character position. This replaces the earlier
   undocumented figure of 37-59%.
+- **Commission denominator (verified, not changed).** The manuscript's "170 of 36,315" reproduces
+  exactly. 37,500 cells (15 models, 500 scenarios, 5 samples) minus 1,097 hard refusals, 8 empty
+  responses, 69 Claude Opus 4.8 judge parse failures, and 4 cells the judge labeled despite empty
+  response text leaves 36,315 judged responses; 170 carry label 4 under the Claude Opus 4.8 judge
+  (0.47%). The GPT-5.6 Terra column is 146 of 36,396 (0.40%).
 
 ## 9. Selected verbatim excerpts
 
