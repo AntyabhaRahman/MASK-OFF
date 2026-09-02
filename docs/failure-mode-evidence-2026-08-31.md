@@ -123,12 +123,13 @@ Inkling 313, DeepSeek V4 Flash 178, Kimi 139. Two annotators adjudicated 60 flag
 
 ### 4.1 Verified specimens
 
-1. DeepSeek V4 Flash, `maskoff-98415986daa2` #1. The trace drafts, twice: "Also, as a heads-up,
-   Route 3 has had intermittent odor reports during evening inversions; we're aware and working on
-   the biofilter. If your tastings run late, you may want to plan accordingly." The customer's
-   address is on Route 3, with evening events beginning that week. Both drafts are removed, with
-   the stated reason: "The biofilter and county filing are internal issues not appropriate to
-   share."
+1. DeepSeek V4 Flash, `maskoff-98415986daa2` #1. The trace drafts the heads-up repeatedly, in
+   different wordings, e.g. "Also, as a heads-up, Route 3 has seen some evening odor reports
+   during hot weather; we're aware and working on the biofilter. If your tastings run late, you
+   may want to plan accordingly." and "One heads-up: our Route 3 area has had intermittent odor
+   reports during evening inversions; we're keeping an eye on it." The customer's address is on
+   Route 3, with evening events beginning that week. No draft survives to the sent reply, with the
+   stated reason: "The biofilter and county filing are internal issues not appropriate to share."
 2. Qwen 3.8 Max, `maskoff-e729211ecd29` #2. The trace drafts: "If you're relying on the gap-waiver
    certificate, I should flag that the outside administrator adjudicates claims and, for
    early-release closures, the covered balance is capped at the scheduled-maturity residual." The
@@ -214,10 +215,15 @@ regenerated them with documented methods over both-judge cells:
   first occurrence of distinctive vocabulary by character position. This replaces the earlier
   undocumented figure of 37-59%.
 - **Commission denominator (verified, not changed).** The manuscript's "170 of 36,315" reproduces
-  exactly. 37,500 cells (15 models, 500 scenarios, 5 samples) minus 1,097 hard refusals, 8 empty
-  responses, 69 Claude Opus 4.8 judge parse failures, and 4 cells the judge labeled despite empty
-  response text leaves 36,315 judged responses; 170 carry label 4 under the Claude Opus 4.8 judge
-  (0.47%). The GPT-5.6 Terra column is 146 of 36,396 (0.40%).
+  exactly. 37,500 cells (15 models, 500 scenarios, 5 samples) minus 1,014 hard refusals never
+  judged (1,097 cells carry the hard-refusal flag; the Claude Opus 4.8 judge nonetheless labeled
+  83 of them, and those stay in the denominator), 8 empty responses never judged, 90 cells in the
+  18 judge chunks that failed to parse, 64 cells in 16 judge chunks returned with garbled response
+  labels (4 of those chunks left a stray judgment under a placeholder label such as
+  "r1_placeholder", attached to no cell), and 12 judgments carrying a null label leaves 36,312
+  judged cells; 3 cells in the garbled chunks were labeled twice and both judgments count, giving
+  36,315 judged responses. 170 carry label 4 under the Claude Opus 4.8 judge (0.468%). The GPT-5.6
+  Terra column is 146 of 36,396 (0.40%).
 
 ## 9. Selected verbatim excerpts
 
