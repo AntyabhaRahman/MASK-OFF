@@ -7,7 +7,7 @@ corpus, the design record, and the released benchmark items with the
 summaries every paper number is derived from.
 
 - **Paper:** [OpenReview](https://openreview.net/forum?id=2fMvRl8Eiw)
-- **Website:** [MASK-OFF results](https://antyabharahman.com/mask-off-site/#results)
+- **Website:** [MASK-OFF](https://antyabharahman.com/mask-off-site/) ([results](https://antyabharahman.com/mask-off-site/#results))
 - **Dataset:** [Hugging Face](https://huggingface.co/datasets/AntRah/MASK-OFF)
   and [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7OBJPU)
   (doi:10.7910/DVN/7OBJPU)
