@@ -6,6 +6,12 @@ full generation and evaluation pipeline, the frozen prompts, the seed
 corpus, the design record, and the released benchmark items with the
 summaries every paper number is derived from.
 
+- **Paper:** [OpenReview](https://openreview.net/forum?id=2fMvRl8Eiw)
+- **Website:** [MASK-OFF results](https://antyabharahman.com/mask-off-site/#results)
+- **Dataset:** [Hugging Face](https://huggingface.co/datasets/AntRah/MASK-OFF)
+  and [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7OBJPU)
+  (doi:10.7910/DVN/7OBJPU)
+
 **Start with [docs/DESIGN.md](docs/DESIGN.md)**, the narrative: how the
 pipeline works, the design decisions and their rationale, architecture
 diagrams, and a reading guide. This README covers layout and how to run.
@@ -129,9 +135,10 @@ seat names, pinned in `mask_off/config.py` with per-route prices.
   `mask_off/docimport.py` from transcript documents produced by the
   workflows in `pool_b_workflows/`; the transcripts are data.
 
-All of it ships through a Harvard Dataverse deposit, which reviewers reach
-through an anonymized review URL. Cite the deposit as: "Anonymous authors.
-Under review at a NeurIPS 2026 workshop."
+All of it ships through the
+[Harvard Dataverse deposit](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7OBJPU)
+(doi:10.7910/DVN/7OBJPU); the benchmark items are also on
+[Hugging Face](https://huggingface.co/datasets/AntRah/MASK-OFF).
 
 ## Anonymisation note
 
